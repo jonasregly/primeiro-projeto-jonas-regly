@@ -1,0 +1,172 @@
+/* Procedimento de ajustes basicos realizado que abrange todo o html, de forma a evitar pequenos bugs futuros na contruçao e modificaçao da pagina html*/
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+/* ajustes basicos feito em todo o corpo da pagina.Inclusao de imagens como plano de fundo da pagina*/
+body{
+height: 80vh;
+background-image: url(./imagens/manha.jfif);
+background-size: cover;
+align-items: center;
+align-content: center;
+display: flex;
+flex-direction: column;
+justify-content:space-evenly;
+}
+/* Mudança na estilizaçao das horas*/
+.horas{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: x-large;
+font-weight: 900;
+width: 200px;
+height: 250px;
+background-color:black;
+color: azure;
+align-items: center;
+align-content: center;
+text-align:center ;
+justify-content: center;
+display: flex;
+flex-direction: column;
+border-radius: 15px;
+}
+/* Mudança na estilizaçao dos minutos*/
+.minutos{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 900;
+    width: 200px;
+    height: 250px;
+    background-color:black;
+    color: azure;
+    align-items: center;
+    align-content: center;
+    text-align:center ;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius:15px;
+
+
+}
+/* Mudança na estilizaçao dos segundos*/
+.segundos{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 900;
+    width: 200px;
+    height: 250px;
+    background-color:black;
+    color: azure;
+    align-items: center;
+    align-content: center;
+    text-align:center ;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+  /* Essa div controla  as dividas de minutos, horas e segundos, necessaria para ajustar essas divs no eixo X da tela*/
+.relogio{
+    width: 900px;
+display: flex;
+justify-content: space-evenly;
+
+}
+/* class criada para agrupar o conjuntos de cabeçalhos(h1,h2), e deixa-los melhor organizados na pagina*/
+.texto{
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+/*Ajuste do H2 atraves de um class 'msg'*/
+.msg{
+    text-align: center;
+}
+
+/* Ajuste do H1 atraves de um class 'positividade'*/
+.positividade{
+
+   text-align: center; 
+}
+
+/* Alteraçao usada para ajustar o tamanho da tela para dispositivos de um determinado tamanho*/
+@media (max-width:800px){
+
+    body{
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+align-items: center;
+justify-content:center;
+align-content: center;
+overflow-y: hidden;
+    }
+
+    /* Essa div controla  as dividas de minutos, horas e segundos, necessaria para ajustar essas divs no eixo X da tela* mesmo dentro da media query*/
+    .relogio{
+    width: 100vw;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    }
+
+/*Mudança nas horas de acordo com o tamanho da tela*/
+    .horas{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:large;
+        font-weight: 900;
+        width: 100px;
+        height: 130px;
+        background-color:black;
+        color: azure;
+        align-items: center;
+        align-content: center;
+        text-align:center ;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px; }
+
+/* Mudança na estilizaçao dos minutos de acordo com tamanho da tela*/
+.minutos{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:large;
+        font-weight: 900;
+        width: 100px;
+        height: 130px;
+        background-color:black;
+        color: azure;
+        align-items: center;
+        align-content: center;
+        text-align:center ;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px; }
+
+/* Mudança no segundos de acordo com tamanho da tela*/
+        .segundos{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:large;
+            font-weight: 900;
+            width: 100px;
+            height: 130px;
+            background-color:black;
+            color: azure;
+            align-items: center;
+            align-content: center;
+            text-align:center ;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px; }
+
+
+}
